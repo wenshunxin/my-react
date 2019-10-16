@@ -7,22 +7,22 @@ const menu = [
             {
                 title:"按钮",
                 name:"btn",
-                path:"/btn"
+                path:"/sub1/btn"
             },
             {
                 title:"表格",
                 name:"myTable",
-                path:"/myTable"
+                path:"/sub1/myTable"
             },
             {
                 title:"图表",
                 name:"myCharts",
-                path:"/myCharts"
+                path:"/sub1/myCharts"
             },
             {
                 title:"日历",
                 name:"myCalendar",
-                path:"/myCalendar"
+                path:"/sub1/myCalendar"
             }
         ]
     },
@@ -34,12 +34,12 @@ const menu = [
             {
                 title:"导航",
                 name:"myCard",
-                path:"/myCard"
+                path:"/sub2/myCard"
             },
             {
                 title:"关注",
                 name:"myAnimate",
-                path:"/myAnimate"
+                path:"/sub2/myAnimate"
             }
         ]
     },
@@ -52,17 +52,34 @@ const menu = [
     {
         title:"动画",
         type:"pie-chart",
-        name:"animation",
+        name:"animate",
         children:[
             {
                 title:"基础动画",
                 name:"bat",
-                path:"/bat"
+                path:"/animate/bat"
             },
             {
                 title:"动画案例",
                 name:"atdemo",
-                path:"/atdemo"
+                path:"/animate/atdemo"
+            }
+        ]
+    },
+    {
+        title:"图表",
+        type:"pie-chart",
+        name:"chart",
+        children:[
+            {
+                title:"echart",
+                name:"echart",
+                path:"/chart/echart"
+            },
+            {
+                title:"rechart",
+                name:"rechart",
+                path:"/chart/rechart"
             }
         ]
     }

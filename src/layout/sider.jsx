@@ -1,6 +1,6 @@
 /**
  * @Date:   2019-10-12T13:39:11+08:00
- * @Last modified time: 2019-10-15T14:03:55+08:00
+ * @Last modified time: 2019-10-16T10:52:26+08:00
  */
 import React from "react";
 import { Link } from 'react-router'
@@ -11,8 +11,9 @@ const { SubMenu }  = Menu;
 export default class Sider extends React.Component{
     constructor(props,context){
         super(props,context);
+        console.log(this.props.path.split("/"))
         this.state = {
-            current: this.props.path.split("/")[1],
+            current: this.props.path.split("/")[2] || this.props.path.split("/")[1],
             username: '',
             collapsed:false,
             theme:"light"
@@ -35,7 +36,7 @@ export default class Sider extends React.Component{
                 <Menu
                     onClick={this.handleClick}
                     style={{ width: 185 }}
-                    defaultOpenKeys={['sub1']}
+                    defaultOpenKeys={[this.props.path.split("/")[1]]}
                     defaultSelectedKeys={[this.state.current]}
                     inlineCollapsed={this.state.collapsed}
                     theme={this.state.theme}
