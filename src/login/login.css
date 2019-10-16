@@ -1,0 +1,37 @@
+/**
+ * @Date:   2019-10-08T10:57:29+08:00
+ * @Last modified time: 2019-10-08T11:40:12+08:00
+ */
+#login{
+    width:320px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 35px;
+    box-shadow: 0 0 100px rgba(0,0,0,.08);
+}
+.login_header{
+    margin-bottom: 24px;
+}
+.login_header span{
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    color: rgb(24, 144, 255);
+    background-image: -webkit-gradient(linear, 37.2198% 34.5325%, 36.4257% 93.1782%, from(rgb(41, 205, 255)), color-stop(0.37, rgb(20, 142, 255)), to(rgb(10, 96, 255)));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.formItemMargin{
+    margin-bottom: 0;
+}
+.login-form-forgot{
+    float: right;
+}
+.login-form-button{
+    width: 100%;
+}

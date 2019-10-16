@@ -1,0 +1,102 @@
+/**
+ * @Date:   2019-09-27T17:17:30+08:00
+ * @Last modified time: 2019-10-16T09:26:33+08:00
+ */
+
+@import '~antd/dist/antd.css';
+body{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* 左侧导航固定宽度 */
+#root{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+}
+#leftMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    border-right: 1px solid #e9e9e9;
+}
+
+/* logo样式 */
+#logo {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    -ms-transition:all 1s;
+    transition:all 1s;
+}
+#logo:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+/* 右侧宽度自适应 */
+#rightWrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 186px;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+
+}
+
+.right-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background: #f5f2f2;
+    overflow-x: hidden;
+}
+
+#rightWrap .ant-menu-submenu {
+    float: right;
+}
+
+.chart-box {
+    margin-top: 30px;
+}
+
+.ege {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.ege a {
+    color: #009688;
+    font-size: 16px;
+}
+
+.lastPic {
+    display: block;
+    margin: 16% auto 0;
+}
+
+.ani-box {
+    text-align: center;
+}
+
+.doclist {
+    line-height: 40px;
+}

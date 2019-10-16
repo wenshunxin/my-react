@@ -1,0 +1,52 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/g2": "^3.5.8",
+    "@types/react-router": "^5.1.1",
+    "@types/react-router-dom": "^5.1.0",
+    "animate.css": "^3.7.2",
+    "antd": "^3.23.4",
+    "antd-theme-generator": "^1.1.7",
+    "build": "^0.1.4",
+    "highcharts": "^7.2.0",
+    "history": "^4.7.2",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^15.3.2",
+    "react-color": "^2.17.3",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.4.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node color &&  react-scripts start",
+    "build": "node color && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}

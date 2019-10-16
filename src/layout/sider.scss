@@ -1,0 +1,57 @@
+/**
+ * @Date:   2019-10-08T13:23:21+08:00
+// @Last modified time: 2019-10-15T13:10:09+08:00
+ */
+$Sd:"leftMenu";
+$Ed:"rightWrap";
+.#{$Sd}{
+    &_header{
+        height:72px;
+        line-height: 72px;
+        text-align: center;
+        box-shadow: 0 1px 9px -3px rgba(0,0,0,.2);
+        border-bottom: 1px solid #e8e8e8;
+    }
+    &_theme{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height:48px;
+        line-height: 48px;
+        width:100%;
+        padding:0 10px;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+.dark{
+    background: #333 !important;
+}
+.light{
+    background: #fff !important;
+}
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left{
+    border-right: 0;
+}
+.#{$Ed}{
+    &_header{
+        height:72px;
+        line-height: 72px;
+        border-bottom: 1px solid #e8e8e8;
+        display: flex;
+        align-items: center;
+        align-content:flex-end;
+    }
+}
+
+.ant-menu-item > a{
+    display: inline-block;
+}
+.ant-menu-horizontal{
+    margin-left: auto;
+}
+.right-box-con{
+    padding: 10px;
+    width:100%;
+}
