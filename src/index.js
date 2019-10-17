@@ -1,6 +1,6 @@
 /**
  * @Date:   2019-09-27T16:30:33+08:00
- * @Last modified time: 2019-10-17T13:22:28+08:00
+ * @Last modified time: 2019-10-17T14:53:32+08:00
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -42,9 +42,9 @@ ReactDOM.render(
                     <Route path="/sub1/myTable" component={component.MyTable} />
                     <Route path="/sub2/myCard" component={component.myCard} >
                         <IndexRoute component={Tab2}/>
-                        <Route path='/tab1' component={Tab1}/>
-                        <Route path='/tab2' component={Tab2}/>
-                        <Route path='/tab3' component={Tab3}/>
+                        <Route path='/sub2/tab1' component={Tab1}/>
+                        <Route path='/sub2/tab2' component={Tab2}/>
+                        <Route path='/sub2/tab3' component={Tab3}/>
                     </Route>
                     <Route path="/sub1/myCharts" component={component.MyCharts} />
                     <Route path="/sub1/myCalendar" component={component.myCalendar} />

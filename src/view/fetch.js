@@ -1,6 +1,6 @@
 /**
  * @Date:   2019-09-27T16:57:01+08:00
- * @Last modified time: 2019-10-10T16:39:39+08:00
+ * @Last modified time: 2019-10-17T14:54:38+08:00
  */
 import React from "react";
 import { Tabs } from "antd";
@@ -9,7 +9,7 @@ const { TabPane } = Tabs;
 const history = createHistory()
 class Fetch extends React.Component{
     callback(tab){
-        history.push(`/${tab}`)
+        history.push(`/sub2/${tab}`)
     }
     render(){
         return (
