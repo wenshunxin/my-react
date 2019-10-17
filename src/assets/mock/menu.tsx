@@ -63,6 +63,11 @@ const menu = [
                 title:"动画案例",
                 name:"atdemo",
                 path:"/animate/atdemo"
+            },
+            {
+                title:"画廊",
+                name:"gallery",
+                path:"/animate/gallery"
             }
         ]
     },

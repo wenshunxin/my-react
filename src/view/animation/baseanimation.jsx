@@ -1,9 +1,9 @@
 /**
  * @Date:   2019-10-15T16:06:48+08:00
- * @Last modified time: 2019-10-16T09:33:36+08:00
+ * @Last modified time: 2019-10-17T14:41:34+08:00
  */
 import React from "react";
-import { Row,Col ,Card} from "antd";
+import { Row,Col ,Card } from "antd";
 import Breadcrumb from "../../component/breadcrumb";
 class BaseAnimation extends React.Component{
     constructor(props){

@@ -1,9 +1,9 @@
 /**
  * @Date:   2019-10-12T13:22:32+08:00
- * @Last modified time: 2019-10-14T14:11:07+08:00
+ * @Last modified time: 2019-10-17T11:38:13+08:00
  */
 import React from "react";
-import { Menu,Icon,Modal} from  "antd";
+import { Menu,Icon,Modal,message} from  "antd";
 import ColorPicker from "../component/ColorPicker/index"
 const createHistory =  require('history').createHashHistory;
 const history = createHistory();
@@ -13,7 +13,7 @@ export default class Header extends React.Component{
     constructor(props) {
         super(props)
         this.state={
-            color:"#fff"
+            color:"#f0f0f0"
         }
     }
     handleoutLogin(e){
@@ -33,14 +33,15 @@ export default class Header extends React.Component{
     * 切换主题
     */
    changeColor = (color) => {
+       console.log(window.less.modifyVars())
        window.less.modifyVars({
            '@primary-color': color,
        }).then((res) => {
-           console.log(res)
-           // localStorage.setItem('user-theme', JSON.stringify({ '@primary-color': color }))
+           localStorage.setItem('user-theme', JSON.stringify({ '@primary-color': color }))
            this.setState({
                color
            })
+            message.success('更换主题颜色成功')
        })
    }
     render(){

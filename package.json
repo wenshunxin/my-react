@@ -24,12 +24,13 @@
     "react-router": "^2.4.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.2",
+    "shufflejs": "^5.2.3",
     "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
-    "start": "node color &&  react-scripts start",
+    "start": "node color && react-scripts start",
     "build": "node color && react-scripts build",
-    "test": "react-scripts test",
+    "test": "node color &&  react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

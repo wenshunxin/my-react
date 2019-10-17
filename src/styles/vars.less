@@ -1,11 +1,25 @@
 /**
  * @Date:   2019-10-09T10:46:52+08:00
- * @Last modified time: 2019-10-09T10:47:34+08:00
+ * @Last modified time: 2019-10-17T11:56:02+08:00
  */
- //vars.less
- @import "~antd/lib/style/themes/default.less";
- @link-color: #00375B;
- @primary-color: #00375B;
- :root {
-     --PC: @primary-color;   //color.less中加入css原生变量：--PC
-  }
+
+
+
+// This file will contain all varibales, our custom varibales and
+//those from Ant Design which we want to override.
+@import "~antd/lib/style/themes/index.less";
+@primary-color:#ff4d4f;
+
+/*  非antd组件如何使用@primary-color ？
+    1.在用的地方@import "vars.less" 然后直接使用@primary-color，然而颜色不会实时切换。
+    2.可以在vars.less文件或main.less定义样式，如:
+    .test{
+        color:@primary-color;
+    }
+    然后直接使用类名即可（不需要再import，不过每次都要单独定义样式很麻烦）
+    3.定义css变量，在使用的地方直接使用css变量（推荐这种方法，首次设置需要重启项目）
+*/
+
+:root {
+    --primaryColor: @primary-color;
+ }

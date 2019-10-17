@@ -1,6 +1,6 @@
 /**
  * @Date:   2019-09-27T16:30:33+08:00
- * @Last modified time: 2019-10-16T10:51:14+08:00
+ * @Last modified time: 2019-10-17T13:22:28+08:00
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -10,9 +10,10 @@ import { Switch } from "react-router-dom";
 // 引入Ant-Design样式 & Animate.CSS样式
 import "./assets/css/animate.css";
 import "./app.css"
+import '../node_modules/antd/dist/antd.css';
+
 import myHome from "./layout/Home"
 import component from "./export";
-
 import Tab1 from "./view/fetch/tab1";
 import Tab2 from "./view/fetch/tab2";
 import Tab3 from "./view/fetch/tab3";
@@ -21,13 +22,13 @@ import Index from "./layout/index"
 // 动画组件
 import Baseanimation from "./view/animation/baseanimation";
 import Animationdemo from "./view/animation/animationdemo";
+import GalleryDemo from "./view/animation/galleryDemo";
 // 图标
 import Echart from "./view/chart/echart";
 import Rechart from "./view/chart/rechart";
 
 import Login from "./login/login"
 import Sample from "./view/sample/sample"
-console.log()
 ReactDOM.render(
     (
         <Router history={hashHistory}>
@@ -52,6 +53,7 @@ ReactDOM.render(
                     <Route path="/animate/atdemo" component={Animationdemo}/>
                     <Route path="/chart/echart" component={Echart} />
                     <Route path="/chart/rechart" component={Rechart}/>
+                    <Route path="/animate/gallery" component={GalleryDemo} />
                 </Route>
             </Switch>
         </Router>
