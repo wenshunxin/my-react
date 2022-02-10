@@ -16,7 +16,7 @@
     "history": "^4.7.2",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "react": "^15.3.2",
     "react-color": "^2.17.3",
